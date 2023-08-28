@@ -19,6 +19,11 @@
             <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" id="search-phone"/>
             <button onclick=searchPhone() class="btn btn-primary">Search</button>
         </section>
+
+        <!-- loding spinner -->
+        <section id="spinner" class="text-center text-purple-500 hidden">
+            <span class="w-1/4 loading loading-ring loading-lg"></span>
+        </section>
         <!-- phone container -->
         <section>
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -33,6 +38,11 @@
                     </div>
                 </div> -->
             </div>
+        </section>
+        <!-- show hide buttons -->
+        <section class="text-center">
+            <button id="show-all" class="my-8 btn btn-primary" disabled>Show All</button>
+            <button id="show-less" class="my-8 btn btn-primary" disabled>Show Less</button>
         </section>
     </main>
 
