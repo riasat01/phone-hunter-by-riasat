@@ -16,8 +16,8 @@
     <main>
         <!-- search box -->
         <section class="text-center">
-            <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" id="search-phone"/>
-            <button onclick=searchPhone() class="btn btn-primary">Search</button>
+            <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" id="search-phone" />
+            <button onclick="searchPhone()" class="btn btn-primary">Search</button>
         </section>
 
         <!-- loding spinner -->
@@ -38,6 +38,22 @@
                     </div>
                 </div> -->
             </div>
+        </section>
+
+        <!-- modal section -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+            <dialog id="phoneDtails" class="modal">
+                <form method="dialog" class="modal-box flex flex-col items-center">
+                    <!-- <h3 class="font-bold text-lg">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p> -->
+                    <!-- <div class="modal-action">
+                        if there is a button in form, it will close the modal
+                        <button class="btn">Close</button>
+                    </div> -->
+                </form>
+            </dialog>
         </section>
         <!-- show hide buttons -->
         <section class="text-center">
